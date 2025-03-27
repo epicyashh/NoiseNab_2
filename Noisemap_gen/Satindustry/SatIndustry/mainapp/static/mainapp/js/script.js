@@ -221,7 +221,7 @@ async function fetchNoiseData(lat, lon) {
         return;
     }
 
-    NoisePanel.style.display = 'flex'; // Show Planet Panel
+    NoisePanel.style.display = 'flex'; // Show Noise Panel
     noiseResultsDiv.innerHTML = "<p>Getting noise data...</p>"; // Initial message
 
     const noiseAnalysisUrl = `/fetch-noise-data/?location=${encodeURIComponent(location)}`; // Encode URL parameter
