@@ -1,0 +1,15 @@
+node_modules
+node_modules/
+.vscode/
+*.log
+venv/
+*.pyc
+__pycache__/
+media/
+.DS_Store
+*.sqlite3
+local_settings.py
+.env
+staticfiles/
+planet_images/
+django_app.log

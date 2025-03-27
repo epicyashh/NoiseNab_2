@@ -1,0 +1,71 @@
+City,Place,Noise level(dB),Category
+DELHI,DELHI,60.3,Residential
+DELHI,DILSHAD GARDEN,54,Silence
+DELHI,"CPCB, HQ ",64.4,Commercial
+DELHI,"DCE, BAWANA",56.8,Silence
+DELHI,"ITO,DELHI",70.3,Commercial
+DELHI,"NSIT, DWARKA",55.4,Silence
+DELHI,CIVIL LINES,58.45,Commercial
+DELHI,R. K. PURAM,58.6,Silence
+DELHI,ANAND VIHAR,65,Commercial
+DELHI,MANDIR MARG,62.9,Silence
+DELHI,PUNJABI BAGH,54.7,Residential
+BENGALURU,BENGALURU,63,Residential
+BENGALURU,"BENGALURU, BTM",62.95,Residential
+BENGALURU,MARATHALI,65.05,Commercial
+BENGALURU,NISARGA BHAWAN,51.16,Residential
+BENGALURU,PARISAR BHAWAN,63.2,Commercial
+BENGALURU,PEENIYA,57.3,Industrial
+BENGALURU,YESHWANTHPUR,68.95,Commercial
+BENGALURU,R.V.C.E.,77.96,Silence
+BENGALURU,WHITEFIELD,65.42,Industrial
+BENGALURU,NIMHANS,59.92,Silence
+BENGALURU,DOLMUR,57.91,Residential
+CHENNAI,CHENNAI,60.6,Residential
+CHENNAI,EYE HOSPITAL,60.92,Silence
+CHENNAI,GUINDY,62.17,Commercial
+CHENNAI,PERAMBUR,65.38,Commercial
+CHENNAI,T NAGAR,66.38,Residential
+CHENNAI,TRIPLICANE,62.17,Residential
+CHENNAI,PALLIKARANAI,63.71,Commercial
+CHENNAI,VELACHERY,63.04,Residential
+CHENNAI,WASHERMANPET,62.96,Commercial
+CHENNAI,ANNA NAGAR,47.67,Silence
+CHENNAI,SOWCARPET,56.29,Residential
+MUMBAI,MUMBAI,63.7,Residential
+MUMBAI,ACWORTH HOSPITAL,53.38,Silence
+MUMBAI,BANDRA,65.58,Commercial
+MUMBAI,"MPCB, HQ",67.08,Commercial
+MUMBAI,"TMCO, THANE",68.29,Commercial
+MUMBAI,VASHI HOSPITAL (NAVI MUMBAI),65.38,Silence
+MUMBAI,KANDIWALI,56.62,Industrial
+MUMBAI,POWAI,59.33,Industrial
+MUMBAI,CHEMBUR,66.75,Residential
+MUMBAI,ANDHERI,64.29,Industrial
+MUMBAI,"AMBASSDOR HOTEL, CST",70.62,Commercial
+HYDERABAD,HYDERABAD,64.7,Residential
+HYDERABAD,JNTU,68.21,Commercial
+HYDERABAD,Paradise,99.96,Commercial
+HYDERABAD,Gachibowli,55.71,Silence
+HYDERABAD,Gaddapotharam,63.86,Industrial
+HYDERABAD,Tarnaka,57.62,Residential
+HYDERABAD,TSPCB,65.75,Commercial
+HYDERABAD,Zoo,54.33,Silence
+HYDERABAD,Jubilee Hills,56.75,Residential
+HYDERABAD,Jeedimetla,63.08,Industrial
+HYDERABAD,ABITS,61.71,Commercial
+KOLKATA,KOLKATA,66.2,Residential
+KOLKATA,Gol Park,120.5,Industrial
+KOLKATA,New Market,63.88,Commercial
+KOLKATA,Patuli,60.29,Residential
+KOLKATA,SSKM Hospital,50.71,Silence
+KOLKATA,WBPCB Headquarter,62.75,Commercial
+KOLKATA,Birati Neelachal,59.0,Residential
+KOLKATA,R G Kar Hospital,47.54,Silence
+KOLKATA,Tollygunge,64.0,Commercial
+KOLKATA,Bag Bazar,67.42,Residential
+CHENNAI,GUINDY INDUSTRIAL,76,Industrial
+CHENNAI,Ambattur Industrial Estate ,86.3,Industrial
+CHENNAI,Sriperumbudur Industrial Area,82,Industrial
+CHENNAI,"Hosur,chennai",78,Industrial
+CHENNAI,Ranipet Industrial,82,Industrial
