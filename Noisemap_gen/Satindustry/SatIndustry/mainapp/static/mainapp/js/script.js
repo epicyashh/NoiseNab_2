@@ -34,7 +34,7 @@ async function createNoiseChart(lat, lon) {
     try {
         const response = await fetch(historicalAQIDataUrl);
         if (!response.ok) {
-            const message = `Error fetching historical air quality data: ${response.status} ${response.statusText}`;
+            const message = `Error fetching noise pollution data: ${response.status} ${response.statusText}`;
             throw new Error(message);
         }
         const responseData = await response.json();
@@ -78,8 +78,8 @@ async function createNoiseChart(lat, lon) {
 
 
     } catch (error) {
-        console.error('Error fetching historical air quality data:', error);
-        //alert('Failed to fetch historical air quality data.');
+        console.error('Error fetching noise pollution data:', error);
+        //alert('Failed to fetch noise pollution data.');
     }
 }
 
