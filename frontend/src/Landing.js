@@ -55,7 +55,7 @@ function Landing() {
             <div className="hero-buttons-new">
             <button onClick={goToMap} className="primary-button w-full">
               <Map size={20} />
-              View Noise Map
+              Noise Hotspot Map
             </button>
             </div>
           
