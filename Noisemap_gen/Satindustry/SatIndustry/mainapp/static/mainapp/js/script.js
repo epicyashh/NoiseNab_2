@@ -24,7 +24,7 @@ function toggleSpinner(show) {
 let currentChart = null;
 let currentChart2 = null;
 
-async function createAirQualityChart(lat, lon) {
+async function createNoiseChart(lat, lon) {
     if (currentChart2) {
         currentChart2.destroy();
         currentChart2 = null;
