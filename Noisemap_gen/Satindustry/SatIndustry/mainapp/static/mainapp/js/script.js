@@ -154,8 +154,9 @@ document.getElementById('search-button').addEventListener('click', () => {
             .then(data => {
                 if (data && data.length > 0) {
                     const { lat, lon, display_name } = data[0];
-                    addMarker(lat, lon, display_name);
-                    fetchData(lat, lon);
+                    const loc = document.getElementById('search-input')?.value; // Ensure search-input exists
+                    addMarker(lat, lon, display_name);
+                    fetchData(lat, lon , loc);
                 } else {
                     alert('Location not found');
                 }
@@ -172,11 +173,12 @@ document.getElementById('search-button').addEventListener('click', () => {
 // Handle Location Button
 document.getElementById('location-button').addEventListener('click', () => {
     console.log("Location button clicked!"); // ADDED console.log
+    document.getElementById('search-input').value = ' ';
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
             const { latitude, longitude } = position.coords;
             addMarker(latitude, longitude, 'Your Location');
-            fetchData(latitude, longitude);
+            fetchData(latitude, longitude,"VIT,vellore");
         }, error => {
             console.error('Error fetching geolocation:', error);
             alert('Failed to get your location.');
@@ -186,7 +188,7 @@ document.getElementById('location-button').addEventListener('click', () => {
     }
 });
 
-async function fetchData(lat, lon) {
+async function fetchData(lat, lon , loc) {
     console.log("fetchData function called with lat:", lat, "lon:", lon);
     toggleSpinner(true);
 
@@ -199,7 +201,7 @@ async function fetchData(lat, lon) {
         }
 
 
-        fetchNoiseData(lat, lon); // Call NoisePollution data here
+        fetchNoiseData(lat, lon,loc); // Call NoisePollution data here
 
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -209,11 +211,11 @@ async function fetchData(lat, lon) {
     }
 }
 
-async function fetchNoiseData(lat, lon) {
+async function fetchNoiseData(lat, lon, location) {
     toggleSpinner(true);
     console.log("fetchNoiseData function called with lat:", lat, "lon:", lon);
 
-    const location = document.getElementById('search-input')?.value; // Ensure search-input exists
+    
     if (!location) {
         console.error("Error: Location is empty or missing.");
         noiseResultsDiv.innerHTML = "<p>Error: Please enter a location.</p>";
