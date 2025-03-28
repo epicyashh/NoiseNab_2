@@ -106,7 +106,7 @@ node server.js
 ![Noise Map Interface](https://github.com/user-attachments/assets/931dd236-3566-433f-a788-8304d4fbac58)
 ![Data Processing](https://github.com/user-attachments/assets/4f89aecf-62e0-494c-b774-61e9f6b2c68a)
 ![ML Analysis](https://github.com/user-attachments/assets/33cec25c-f544-4cc5-9109-a908e8e70a46)
-![Visualization](https://github.com/user-attachments/assets/67735d3e-12ab-4e6b-9e04-7328af5a9570)
+![Visualization]![image](https://github.com/user-attachments/assets/33cec25c-f544-4cc5-9109-a908e8e70a46)
 
 ---
 
