@@ -49,17 +49,6 @@ def fetchNoiseMongo(location):
     finally:
         client.close()  # Ensure MongoDB connection is closed
 
-def home(request): # Make sure your home view is still here
-    return render(request, 'mainapp/home.html')
-
-def about(request):
-    return render(request, 'mainapp/about.html')
-
-def report_form(request):
-    if request.method == 'POST':
-        # Handle form submission
-        pass
-    return render(request, 'mainapp/report.html')
 
 def data_search(request):
     return render(request, 'mainapp/data.html')
