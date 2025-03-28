@@ -39,6 +39,7 @@ def fetchNoiseMongo(location):
         collection = db["NoiseCollection"]  
 
         # Fetch noise pollution data
+        location = location.split(",")[0]  # Extract the first part of the location
         noise_data = list(collection.find({"Place": {"$regex": location, "$options": "i"}}, {"_id": 0}))
 
         return noise_data if noise_data else None
