@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -139,7 +140,13 @@ STATICFILES_DIRS = [
     # You can add more directories here if needed
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # For production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -150,22 +157,18 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'file': {
-            'level': 'DEBUG',  # Minimum level to log (DEBUG, INFO, WARNING, ERROR, CRITICAL)
-            'class': 'logging.FileHandler',
-            'filename': 'django_app.log',  # Path to your log file (relative to project root or absolute)
+        'console': {
+            'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
-        'mainapp': {  # Replace 'mainapp' with the name of your Django app where you want to log
-            'handlers': ['file'],
-            'level': 'DEBUG', # Level for this logger (can be different from handler level)
-            'propagate': True, # Whether messages should propagate to root logger
+        'mainapp': {
+            'handlers': ['console'],
+            'level': 'INFO',
         },
-        'django': { # Configure Django's default logger if needed
-            'handlers': ['file'],
-            'level': 'ERROR', # Example: Only log Django ERRORs and above to file
-            'propagate': False, # Do not propagate to root logger to avoid duplication if root logger is configured
+        'django': {
+            'handlers': ['console'],
+            'level': 'ERROR',
         },
     },
 }
